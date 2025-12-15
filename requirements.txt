@@ -1,0 +1,61 @@
+# SEO Outreach Agent - Requirements
+# Install with: pip install -r requirements.txt
+#
+# Quick Start:
+#   1. pip install -r requirements.txt
+#   2. playwright install chromium
+#   3. Set OPENAI_API_KEY and SMTP credentials in .env file
+#   4. python seo_outreach_agent.py
+
+# Core LangChain and LangGraph dependencies
+langchain==0.3.3
+langchain-openai==0.2.0
+langchain-community==0.3.2
+langgraph==0.2.18
+
+# Browser automation (for Google Maps and email scraping)
+playwright==1.40.0
+playwright-stealth==1.0.6
+selenium==4.15.2
+
+# HTTP clients for multiple scraping methods
+aiohttp==3.9.1
+httpx==0.25.2
+
+# HTML parsing
+beautifulsoup4==4.12.2
+
+# WHOIS lookup (for email finding fallback)
+python-whois==0.8.0
+
+# DNS resolution for email validation
+dnspython==2.4.2
+
+# Configuration and settings
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.0
+
+# Note: Pydantic is required for structured outputs with LangChain
+
+# Standard library enhancements
+typing-extensions>=4.5.0
+
+# FastAPI and ASGI server
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+
+# Rate limiting
+slowapi==0.1.9
+
+# Pydantic for validation
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Standard library enhancements
+typing-extensions>=4.5.0
+
