@@ -146,8 +146,6 @@ asyncio.run(main())
 ### Optional Environment Variables
 
 - `OPENAI_MODEL`: OpenAI model to use (defaults to `gpt-4o`)
-  - Available models: `gpt-4o`, `gpt-4o-mini`, `gpt-4-turbo`, `gpt-3.5-turbo`
-  - Set in `.env` file: `OPENAI_MODEL=gpt-4o-mini` (for faster/cheaper) or `OPENAI_MODEL=gpt-4o` (for best quality)
 
 ### Email Sending Configuration
 
@@ -336,16 +334,6 @@ result = await agent.process(
 )
 ```
 
-### Model Selection
-
-You can specify which OpenAI model to use by setting `OPENAI_MODEL` in your `.env` file:
-
-```env
-OPENAI_MODEL=gpt-4o          # Best quality (default)
-OPENAI_MODEL=gpt-4o-mini     # Faster and cheaper
-OPENAI_MODEL=gpt-4-turbo     # Alternative
-OPENAI_MODEL=gpt-3.5-turbo   # Fastest/cheapest
-```
 
 ### Email Customization
 
